@@ -22,9 +22,14 @@ html {
 }
 
 body {
-  background: var(--primary-bg-color, black);
   color: var(--secondary-tesxt-color);
   font-family: var(--secondary-font-family);
+}
+
+form {
+  width: 375px;
+  height: 812px;
+  background: var(--primary-bg-color, black);
 }
 
 a {
