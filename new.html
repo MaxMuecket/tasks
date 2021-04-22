@@ -11,9 +11,9 @@
     <form action="" class="form">
       <h2 class="form__title">Add new</h2>
 
-      <input class="text-input" type="text" placeholder="Enter Task" />
+      <input class="form__input" type="text" placeholder="Enter Task" />
 
-      <h3 class="form__subtitle">WHEN</h3>
+      <h3 class="form__subtitle">When</h3>
 
       <!-- START Radio block / component-->
       <section class="radio-group">
@@ -24,7 +24,7 @@
             name="date"
             value="today"
           />
-          <span>Today</span>
+          <span class="radio-group__title">Today</span>
         </label>
 
         <label>
@@ -34,7 +34,7 @@
             name="date"
             value="tommorow"
           />
-          <span>Tommorow</span>
+          <span class="radio-group__title">Tommorow</span>
         </label>
 
         <label>
@@ -44,7 +44,7 @@
             name="date"
             value="selectDate"
           />
-          <span>Select Date</span>
+          <span class="radio-group__title">Select Date</span>
         </label>
       </section>
       <!-- END Radio block / component-->
