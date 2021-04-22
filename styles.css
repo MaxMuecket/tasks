@@ -131,7 +131,7 @@ body {
 
 .dashboard__new-task {
   grid-column: 3/4;
-  padding: 2em 3em;
+  padding: 1.3em 2em;
   background: var(--primary-color);
   display: grid;
   place-items: center;
