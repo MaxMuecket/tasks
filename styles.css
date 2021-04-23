@@ -174,3 +174,28 @@ body {
   text-decoration: line-through;
   text-decoration-color: var(--primary-color);
 }
+
+.nav-toggle {
+  grid-column: 1/4;
+  margin-left: 0.9em;
+}
+
+.nav-toggle__label span,
+.nav-toggle__label span::before {
+  position: relative;
+  display: block;
+  height: 0.3em;
+  width: 2.5em;
+  background: black;
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+.nav-toggle__label span::before {
+  position: absolute;
+  content: "";
+  bottom: 0.3em;
+  width: 1.7em;
+  background: black;
+  margin-bottom: 0.5em;
+}
