@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main class="dashboard">
+      <button class="dashboard__burger-menu">
+        <img src="assets/burger-menu.svg" alt="" />
+      </button>
+
+      <h2 class="dashboard__title">Tasks</h2>
+      <button class="dashboard__notif">
+        <img src="assets/notif.svg" alt="" />
+      </button>
+
+      <section class="radio-group-selector">
+        <label>
+          <input class="radio-group__input" type="radio" name="date" />
+          <span class="radio-group__title">This Week</span>
+        </label>
+
+        <label>
+          <input class="radio-group__input" type="radio" name="date" />
+          <span class="radio-group__title">Tommorow</span>
+        </label>
+
+        <label>
+          <input class="radio-group__input" type="radio" name="date" />
+          <span class="radio-group__title">Today</span>
+        </label>
+      </section>
+      <section class="checkbox-group">
+        <label>
+          <input class="checkbox-group__input" type="checkbox" />
+          <span class="checkbox-group__task">Book appointment with Jared</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" />
+          <span class="checkbox-group__task">Upload today shot on Dribble</span>
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" />
+          <span class="checkbox-group__task"
+            >Complete the Elephant Illustration</span
+          >
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" />
+          <span class="checkbox-group__task"
+            >Buy Cake for Clair's Birthday</span
+          >
+        </label>
+        <label>
+          <input class="checkbox-group__input" type="checkbox" />
+          <span class="checkbox-group__task"
+            >Attend UX Conference with Jared</span
+          >
+        </label>
+      </section>
+      <a class="dashboard__new-task" href="new.html">
+        <img src="assets/add-task.svg" alt="" />
+      </a>
+    </main>
+  </body>
+</html>
