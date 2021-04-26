@@ -174,3 +174,75 @@ body {
   text-decoration: line-through;
   text-decoration-color: var(--primary-color);
 }
+
+/* START ISSUE8 */
+.nav-toggle {
+  grid-column: 1/2;
+  margin-left: 0.9em;
+}
+
+.nav-toggle__label span,
+.nav-toggle__label span::before {
+  position: relative;
+  display: block;
+  height: 0.3em;
+  width: 2.5em;
+  background: black;
+  margin-top: 5em;
+  margin-bottom: 4em;
+  border-radius: 0.5em;
+}
+
+.nav-toggle__label span::before {
+  position: absolute;
+  content: "";
+  bottom: 0.3em;
+  width: 1.7em;
+  background: black;
+  margin-bottom: 0.5em;
+}
+
+#main-menu {
+  background-color: #161060;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  opacity: 1;
+  z-index: 10;
+  transform: scale(0, 1);
+  transform-origin: left;
+  left: 0;
+  transition: transform 550ms ease-in-out;
+  /* grid-area: 1 / 1 /  / 4; */
+  color: var(--secondary-text-color);
+}
+
+#main-menu:target {
+  background-color: #161060;
+  transform: scale(1, 1);
+  /* position: fixed; */
+}
+
+/* #main-menu a {
+  color: var(---secondary-text-color);
+  z-index: 101;
+} */
+
+#main-menu .main-menu__close {
+  position: absolute;
+  right: 0;
+}
+
+#main-menu a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+.main-menu ul {
+  list-style-type: none;
+}
+
+.main-menu h3 {
+  text-transform: uppercase;
+  margin: 4em 0 2em 2em;
+}
+/* END ISSUE8 */

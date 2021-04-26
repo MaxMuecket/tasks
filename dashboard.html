@@ -9,9 +9,36 @@
   </head>
   <body>
     <main class="dashboard">
-      <button class="dashboard__burger-menu">
+      <!-- <button class="dashboard__burger-menu">
         <img src="assets/burger-menu.svg" alt="" />
-      </button>
+      </button> -->
+
+      <!-- START ISSUE8 -->
+      <section id="main-menu">
+        <a href="dashboard.html" class="main-menu__close">X</a>
+        <div class="main-menu">
+          <h3>Taskapp</h3>
+          <ul>
+            <li><a href="">Dashboard</a></li>
+
+            <li>Calendar</li>
+            <li>Categorize Tasks</li>
+            <li>Settings</li>
+          </ul>
+          <ul>
+            <li>About</li>
+            <li>Privacy Policy</li>
+            <li>Licence</li>
+          </ul>
+        </div>
+      </section>
+
+      <a href="#main-menu" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle__label">
+          <span></span>
+        </label>
+      </a>
+      <!-- END ISSUE8 -->
 
       <h2 class="dashboard__title">Tasks</h2>
       <button class="dashboard__notif">
