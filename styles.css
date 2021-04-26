@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap");
 
 *,
 *:before,
@@ -203,6 +203,8 @@ body {
 }
 
 #main-menu {
+  padding-top: 4em;
+  padding-left: 1.728em;
   background-color: #161060;
   height: 100%;
   width: 100%;
@@ -212,37 +214,55 @@ body {
   transform: scale(0, 1);
   transform-origin: left;
   left: 0;
-  transition: transform 550ms ease-in-out;
-  /* grid-area: 1 / 1 /  / 4; */
+  transition: transform 0.5s ease-in-out;
   color: var(--secondary-text-color);
 }
 
 #main-menu:target {
   background-color: #161060;
   transform: scale(1, 1);
-  /* position: fixed; */
 }
-
-/* #main-menu a {
-  color: var(---secondary-text-color);
-  z-index: 101;
-} */
 
 #main-menu .main-menu__close {
   position: absolute;
   right: 0;
+  margin-right: 3em;
 }
 
 #main-menu a {
   text-decoration: none;
   color: var(--secondary-text-color);
 }
-.main-menu ul {
-  list-style-type: none;
-}
 
 .main-menu h3 {
   text-transform: uppercase;
-  margin: 4em 0 2em 2em;
+  font-size: 1.063em;
+  padding-bottom: 1.5em;
+  font-family: var(--primary-font-family);
+  font-weight: normal;
 }
+
+.main-menu__main-list {
+  padding-left: 0;
+  margin-bottom: 2em;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 2em;
+  font-family: var(--secondary-font-family);
+  font-weight: 300;
+}
+
+.main-menu__sub-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  font-size: 0.938em;
+  font-family: var(--secondary-font-family);
+  font-weight: lighter;
+}
+
 /* END ISSUE8 */
